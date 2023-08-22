@@ -40,7 +40,7 @@ app.use(session({
 app.use(passport.initialize());
 app.use(passport.session());
 
-mongoose.connect("mongodb://127.0.0.1:27017/userDB");
+mongoose.connect("mongodb+srv://admin-hadi:hadi%40mongoadmin%232003@atlascluster.rmzmzvm.mongodb.net/userDB");
 const port = process.env.PORT || 3000;
 
 
