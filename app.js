@@ -83,7 +83,7 @@ passport.deserializeUser(function (user, cb) {
 passport.use(new GoogleStrategy({
     clientID: process.env.CLIENT_ID,
     clientSecret: process.env.CLIENT_SECRET,
-    callbackURL: "https://hadi-secrets-oauth.cyclic.cloud/auth/google/secrets"
+    callbackURL: "https://auth-and-security-repo.vercel.app/auth/google/secrets"
 },
     function (accessToken, refreshToken, profile, cb) {
         console.log(profile);
