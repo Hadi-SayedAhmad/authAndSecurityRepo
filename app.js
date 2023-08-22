@@ -57,7 +57,7 @@ const userSchema = new mongoose.Schema({
 userSchema.plugin(passportLocalMongoose);//used to hash and salt and save
 userSchema.plugin(findOrCreate);
 
-// userSchema.plugin(encrypt, {secret: process.env.SECRET, encryptedFields: ["password"]});
+// userSchema.plugin(encrypt, {secret: envthing, encryptedFields: ["password"]});
 
 const User = new mongoose.model("user", userSchema);
 
